@@ -1,0 +1,195 @@
+body {
+  background-color: black;
+}
+
+.layer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  background-color: #f9f6f6ca;
+  transition: all 0.5s;
+}
+
+#categoryDetails .layer {
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  background-color: #f9f6f6ca;
+  transition: all 0.5s;
+}
+#categoryDetails .box:hover .layer{
+  height: 100%;
+}
+
+.card {
+  overflow: hidden;
+  transition: all 0.6s;
+  border: none;
+}
+
+.card:hover .layer {
+
+  height: 100%;
+}
+
+.hey {
+  font-size: 14px;
+}
+
+/* nav */
+.side-nav {
+  background-color: black;
+  height: 100vh;
+  width: 180px;
+  z-index: 10;
+  top: 0;
+  left: -180px;
+}
+
+.side-nav ul {
+ padding-top: 70px;
+ 
+  overflow: hidden;
+
+}
+
+.side-nav ul li {
+  padding: 15px;
+
+
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+
+  color: white;
+}
+
+.yummy {
+  height: 100vh;
+  width: 65px;
+  top: 0;
+  right: -65px;
+  background-color: white;
+  color: black;
+}
+
+#categoryCard .card {
+  border: none;
+}
+
+
+/* loader */
+#load {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: black;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -72px 0 #FFF inset;
+  }
+
+  100% {
+    box-shadow: 48px 0 #FFF inset;
+  }
+}
+
+#details .row {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.p-ing {
+  font-size: 14px;
+}
+
+.area,
+.catego {
+  font-size: 17px;
+}
+
+.list-unstyled {
+  font-size: 14px;
+}
+
+#close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+#Contact input{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #8C8C8C;
+  background-color: transparent;
+  color: rgb(190, 190, 190);
+  padding: 5px 10px;
+  box-shadow: 0 .5rem 1rem rgba(255,255,255,.2)!important;
+  margin-bottom: 5px;
+}
+
+#Contact button{
+  width: fit-content;
+}
+
+#Contact button:hover{
+  color: white;
+}
+
+#Contact .valid{
+  border-bottom-color: green;
+  box-shadow: 0 .5rem 1rem rgba(0, 152, 43, 0.5)!important;
+}
+
+#Contact .non-valid{
+  border-bottom-color: red;
+  box-shadow: 0 .5rem 1rem rgba(156, 5, 5, 0.5)!important;
+}
+
+#Contact .validation-card{
+  background-color: var(--bg-sec-color);
+  color: var(--text-sec-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: none;
+}
+
+#Contact i{        
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  display: none;
+}
+
+.bg-green{ color: green;}
+.bg-red{ color: red;}
+
+.signeture{
+  font-size: 12px;
+  padding-top: 70%;
+  
+
+}

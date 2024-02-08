@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="./img/yummy.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="load" class=" d-none">
+    <div class=" d-flex justify-content-center align-items-center h-100 ">
+      <span class="loader"></span>
+    </div>
+  </div>
+
+  <header id="home" class="mt-5 ">
+    <div class=" container">
+      <div class="row" id="cards">
+
+      </div>
+    </div>
+  </header>
+  <!-- details -->
+  <section id="details" class="d-none">
+    <div class="container">
+      <div class="row " id="getdetails">
+
+      </div>
+    </div>
+  </section>
+  <!-- sidenav -->
+  <nav class="side-nav position-fixed ">
+    <ul class="list-unstyled  text-white ">
+      <li><a href="#Search" id="one">Search</a></li>
+      <li><a href="#Category" id="two">Category</a></li>
+      <li><a href="#Area" id="three">Area</a></li>
+      <li><a href="#Ingredients" id="four">Ingredients</a></li>
+      <li><a href="#Contact" id="five">Contact Us</a></li>
+    </ul>
+   
+      <p class="signeture text-white">Copyright © 2022 by kholoud. <br>All Rights Reserved.</p>
+    </div>
+    <div class="icons">
+
+    </div>
+    <div class="yummy position-absolute  d-flex flex-column justify-content-between text-center">
+
+      <img src="img/yummy.png" alt="" class="w-50 m-3" id="logo">
+
+      <div class="open-icons  ">
+        <i class="fa-solid fa-xmark fa-2x " id="btn-close"></i>
+        <i class="fas fa-bars fa-3x" id="open"></i>
+      </div>
+      <div class="links d-flex flex-column p-4 ">
+        <i class="fa-solid fa-globe mb-2"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- search -->
+  <section id="Search" class="mt-5 mb-5 d-none ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" placeholder="Search By Name" class="form-control" id="byName">
+        </div>
+        <div class="col-md-6">
+          <input type="text" placeholder="Search By First Letter" class="form-control" id="firstLetter">
+        </div>
+      </div>
+      <div class="row" id="cardSearch">
+
+      </div>
+    </div>
+  </section>
+  <!-- category -->
+
+  <section id="Category" class="d-none ">
+    <div class="container">
+      <div class="row" id="categoryCard">
+
+      </div>
+    </div>
+  </section>
+  <!-- catDetails -->
+  <section id="catDetails" class=" d-none">
+    <div class="container">
+      <div class="row" id="categoryDetails">
+
+      </div>
+    </div>
+  </section>
+  <!-- area -->
+  <section id="Area" class="mt-3 mb-3 d-none">
+    <div class="container ">
+      <div class="row" id="homeArea">
+
+      </div>
+    </div>
+  </section>
+  <!-- areaDetails -->
+  <section id="arDetail" class="mt-5 mb-5 d-none">
+    <div class=" container">
+      <div class="row" id="areaDetails">
+
+      </div>
+    </div>
+  </section>
+  <!-- ingrediants -->
+
+  <section id="Ingredients" class="d-none">
+    <div class="container">
+      <div class="row" id="getIng">
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ingDetails -->
+  <section id="ingrediantDetails" class="d-none">
+    <div class="container">
+      <div class="row" id="ingDetails">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section id="Contact" class="d-none">
+    <div class="container px-1 px-lg-5">
+      <h2 class="fs-1 text-center mb-5">Contact Us</h2>
+      <form>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="text" name="name" placeholder="Enter Your Name" required>
+            <div class="validation-card">"Your name should have at least 3 characters."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="email" name="email" placeholder="Enter Your Email" required>
+            <div class="validation-card">"You should enter a valid email."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="tel" name="phone" placeholder="Enter Your Phone" required>
+            <div class="validation-card">"You should enter a valid number ex:0104 5678 910."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="number" name="age" placeholder="Enter Your Age" required>
+            <div class="validation-card">"You should enter a valid age."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="password" name="password" placeholder="Enter Your Password" required>
+            <div class="validation-card">"Your name should have at least 8 characters, 1 UPPERCASE, 1 lowercase, 1 number, 1 $peci@l ch@r@cter."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="password" name="repassword" placeholder="Re-enter Your Password" required>
+            <div class="validation-card">"You should have matched passwords."</div>
+          </div>
+          <button class="btn btn-outline-warning mt-5" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
